@@ -9,7 +9,7 @@ if get(s:, 'loaded', 0)
 endif
 let s:loaded = 1
 
-function! ncm2_vim#on_complete(ctx)
+function! ncm2_vim#on_complete(ctx) abort
   let startcol = necovim#get_complete_position(a:ctx.typed)
   let base = strpart(a:ctx.typed, startcol)
   let cnd = necovim#gather_candidates(a:ctx.typed, base)
