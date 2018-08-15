@@ -22,6 +22,5 @@ function! ncm2_vim#init() abort
         \ 'priority': 9,
         \ 'scope': ['vim'],
         \ 'on_complete': 'ncm2_vim#on_complete',
-        \ 'word_pattern': ['\w\+\.$'],
         \ })
 endfunction
